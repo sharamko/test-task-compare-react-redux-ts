@@ -78,7 +78,7 @@ const App: FC = () => {
         const calcScaleway =
           (storageValue <= 75 ? 0 : storageValue - 75) *
             (multiSingle === 'option1' ? 0.06 : 0.03) +
-          (transferValue <= 75 ? 0 : transferValue - 75) * 0.01;
+          (transferValue <= 75 ? 0 : transferValue - 75) * 0.02;
         return compArr.push({
           name: company.name,
           cost: calcScaleway.toFixed(2),
